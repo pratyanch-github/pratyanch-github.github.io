@@ -1,4 +1,4 @@
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
     div #contact-links {
         display: flex;
         flex-direction: column;
@@ -14,24 +14,27 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    color: white;
+    color: #ffffff; /* Text color set to white for better readability on dark background */
     margin: 0;
     padding: 0;
+    background-color: #1a1a1a; /* Dark background color */
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 #navbar {
-    background-color: #A395B6;
+    background-color: #282c34; /* Darker background color for navbar */
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     text-align: right;
     padding: 2em 1em;
+    border-bottom: 2px solid #61dafb; /* Accent color for the bottom border */
+    border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
 }
 
 #navbar .nav-link {
@@ -40,13 +43,13 @@ a {
 }
 
 .nav-link.active {
-    font-weight: bold; /* Highlight active link */
-    color: #ff6600; /* Change the color of the active link */
+    font-weight: bold;
+    color: #ff6600;
 }
 
 #welcome-section {
     box-sizing: border-box;
-    background-color: #0C1D3B;
+    background-color: #1a1a1a;
     height: 100vh;
     width: 100%;
     padding: 20px;
@@ -68,16 +71,15 @@ a {
     text-shadow: 2px 2px 4px #000000;
 }
 
-.myinfo{
-    background-color: #372551;
+.myinfo {
+    background-color: #333333; /* Darker background color for myinfo section */
     margin: 5px;
     padding: 6em;
-    border-radius: 2px;
-
+    border-radius: 10px; /* Rounded corners */
 }
 
 #projects {
-    background-color: #82ABC9;
+    background-color: #444444; /* Darker background color for projects section */
     padding: 6em;
 }
 
@@ -95,7 +97,7 @@ img {
 }
 
 #projects p {
-    background-color: #0C1D3B;
+    background-color: #1a1a1a;
     transition: background-color 0.5s;
     font-size: 2em;
     text-align: center;
@@ -104,7 +106,7 @@ img {
 }
 
 #projects p:hover {
-    background-color: #0c1d3b88;
+    background-color: #1a1a1a88;
 }
 
 #projects-grid {
@@ -117,36 +119,14 @@ img {
     margin: 0 auto;
 }
 
-#project-one {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+#project-one, #project-two, #project-three, #project-four {
     justify-self: center;
     align-self: center;
-}
-
-#project-two {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    justify-self: center;
-    align-self: center;
-}
-
-#project-three {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: center;
-    align-self: center;
-}
-   
-#project-four {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    justify-self: center;
-    align-self: center;
+    border-radius: 10px; /* Rounded corners for each project */
 }
 
 #contact {
-    background-color: #0C1D3B;
+    background-color: #1a1a1a;
     padding: 6em;
 }
 
@@ -171,7 +151,7 @@ img {
 }
 
 #footer {
-    background-color: #0C1D3B;
+    background-color: #1a1a1a;
     padding: 1em 4em 2em 1em;
 }
 
@@ -179,4 +159,5 @@ img {
     font-size: 1.6rem;
     margin: 0;
     text-align: right;
+    color: #ffffff; /* Text color set to white for better readability on dark background */
 }
